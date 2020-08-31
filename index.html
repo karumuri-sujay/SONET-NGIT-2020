@@ -4,38 +4,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Things I've Learned</title>
+    <title>Document</title>
+    <style type="text/css">
+        div {
+            text-align: center;
+        }
+        
+        body {
+            background-color: yellowgreen;
+        }
+        
+        h1 {
+            color: red;
+        }
+    </style>
 </head>
 
 <body>
-    <h1>Things I've Learned</h1>
-    <h2>Internet Basics</h2>
-    <ol>
-        <li>HTTP Request</li>
-        <li>IP Address</li>
-        <li>Servers</li>
-    </ol>
-    <h1>HTML</h1>
-    <ol>
-        <li>Stands for <b>Hyper Text Markup Language</b></li>
-        <li>Lots of tags</li>
-        <ol>
-            <li>Boilerplate</li>
-            <ul>
-                <li>Doctype</li>
-                <li>HTML</li>
-                <li>Head</li>
-                <ul>
-                    <li>Title</li>
-                </ul>
-                <li>Body</li>
-            </ul>
-            <li>Headings</li>
-            <li>Paragraph</li>
-            <li><em>em</em></li>
-            <li><b>strong</b></li>
-        </ol>
-    </ol>
+    <div>
+        <h1>Personal details</h1>
+        <form>
+            Name: <input type="text" name="username">
+            <br> <br> Password: <input type="password" name="password">
+            <br><br>Email id: <input type="email" name="email"> <br>Gender: <input type="radio" name="gender">Male <input type="radio" name="gender">Female
+            <br><br>Contact:
+            <input type="number">
+            <h1>Educational Qualification</h1>
+            <br> Degree: <select> 
+            <option selected>Select</option>
+            <option value="degree">BTECH</option>
+            <option value="degree">BE</option>
+        </select><br><br> Engineering: <select> 
+            <option selected>Select</option>
+            <option value="degree">CSE</option>
+            <option value="degree">IT</option>
+        </select><br><br> Hobbies: <input type="checkbox" name="hobbies">Playing chess <input type="checkbox" name="hobbies">Reading Books
+            <h1>Address</h1>
+            <textarea rows="20" cols="30"></textarea><br><br> Attach Resume: <input type="file"><br><br>
+            <input type="submit">
+        </form>
+
+    </div>
 </body>
 
 </html>
